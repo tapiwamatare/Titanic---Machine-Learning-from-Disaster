@@ -1,6 +1,6 @@
 # Titanic
 Titanic 
-# Model Card for [Tapiwanashe Emmanuel Matare]
+# Model Card for Tapiwanashe Emmanuel Matare
 
 ## Basic Information
 - **Email Address**: tapiwanashe.matare@gwmail.gwu.edu
