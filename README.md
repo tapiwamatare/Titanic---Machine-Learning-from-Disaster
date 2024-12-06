@@ -1,8 +1,7 @@
-# Titanic
-Titanic 
-# Model Card for Tapiwanashe Emmanuel Matare
+# Titanic - Machine Learning from Disaster Model Card
 
 ## Basic Information
+- **Name**: Tapiwanashe Emmanuel Matare
 - **Email Address**: tapiwanashe.matare@gwmail.gwu.edu
 - **Date**: [4 December 2024]
 - **Model Version**: 1.0
