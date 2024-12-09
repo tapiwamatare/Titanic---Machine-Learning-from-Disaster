@@ -71,6 +71,63 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 - **Metrics Used for Evaluation**:
   - AUC (Area Under the Curve)
   - AIR (Accuracy Improvement Rate)
+ 
+  - # Model Card: Decision Tree Classifier
+
+## Model Overview
+This model is a Decision Tree Classifier trained to predict *Survival Status*:
+- *Survival = 0*: No (Did not survive)
+- *Survival = 1*: Yes (Survived)
+
+The chart below illustrates the model's performance based on tree depth, showcasing the Training AUC and Validation AUC.
+
+![Tree Depth vs. Training and Validation AUC](image.png)
+
+---
+
+## Performance Metrics on Test Data
+- *AUC on Test Data*: 0.7687
+- *Accuracy on Test Data*: 0.7687
+
+### Confusion Matrix on Test Data
+| True\Predicted   | No (Survival = 0) | Yes (Survival = 1) |
+|-------------------|-------------------|--------------------|
+| *No (Survival = 0)* | 69                | 18                 |
+| *Yes (Survival = 1)* | 13                | 34                 |
+
+---
+
+## Performance Metrics by Sex
+### Sex = 1 (Male)
+- *Confusion Matrix*:
+  | True\Predicted   | No (Survival = 0) | Yes (Survival = 1) |
+  |-------------------|-------------------|--------------------|
+  | *No (Survival = 0)* | 65                | 7                  |
+  | *Yes (Survival = 1)* | 12                | 3                  |
+- *Accuracy*: 0.7816
+
+### Sex = 0 (Female)
+- *Confusion Matrix*:
+  | True\Predicted   | No (Survival = 0) | Yes (Survival = 1) |
+  |-------------------|-------------------|--------------------|
+  | *No (Survival = 0)* | 4                 | 11                 |
+  | *Yes (Survival = 1)* | 1                 | 31                 |
+- *Accuracy*: 0.7447
+
+---
+
+## Notes
+- The model is designed to predict survival status, with *Survival = 0* representing "Did not survive" and *Survival = 1* representing "Survived."
+- The overall accuracy on test data is *76.87%*, with differences in accuracy observed between males and females.
+- The visualization of tree depth vs. AUC highlights potential overfitting, as seen by the divergence between training and validation AUC as tree depth increases.
+
+---
+
+## Recommendations
+- *Further tuning* of the model might reduce overfitting.
+- Consider additional stratified analysis by other variables to evaluate performance consistency across subgroups.
+
+---
   
 ## Ethical Considerations
 ### Potential Negative Impacts
