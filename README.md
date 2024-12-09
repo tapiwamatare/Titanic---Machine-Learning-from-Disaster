@@ -21,7 +21,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 - **Intended Uses**: This model is intended for predicting survival on the Titanic based on passenger characteristics.
 - **Intended Users**: Data scientists, researchers, and educators interested in machine learning applications.
 - **Out-of-Scope Uses**: This model should not be used for real-time decision-making in critical situations.
-- 
+  
 ## Training Data
 - **Source of Training Data**: The Titanic dataset from Kaggle.
 - **Training Data Division**: The training data was divided into 70% training and 30% validation.
