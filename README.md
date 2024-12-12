@@ -8,13 +8,7 @@
 - **License**:License
 MIT License
 
-Copyright (c) 2021 jphall@gwu.edu
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
 - **Model Implementation Code**: [Link to Colab](https://colab.research.google.com/drive/1hM_9FXe61U-6uMEgViwE-vmaZCpdamYh#scrollTo=qV1AOzzGyK7h) 
   
 ### Intended Use
@@ -26,8 +20,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 - **Source of Training Data**: The Titanic dataset from Kaggle.
 - **Training Data Division**: The training data was divided into 70% training and 30% validation.
 - **Number of Rows**:
+- 
   - Training Data: [623 rows]
   - Validation Data: [134 rows]
+    
 - **Data Dictionary**:
   | Column Name | Modeling Role | Measurement Level | Description |
   |-------------|---------------|-------------------|-------------|
@@ -40,17 +36,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   | Embarked    | Input         | Nominal           | Port of embarkation (C = Cherbourg; Q = Queenstown; S = Southampton) |
   | Survived    | Target        | Binary            | Survival status (0 = No, 1 = Yes) |
 
-## EDA (Exploratory Data Analysis)
-- **Engaging in Exploratory Data Analysis (EDA), I embark on a journey of understanding my dataset deeply. Through various visualization techniques, I:**
 
-- **Visualize distributions of key numerical features like age, number of siblings/spouses (SibSp), number of parents/children (Parch), and fare. This helps me uncover trends and identify outliers.**
-- **Explore relationships between different variables, potentially revealing correlations that could impact survival predictions.**
-
-## Data Cleaning
-- **Data cleaning is a pivotal stage in my analysis. In this phase, I:**
-- **Address missing values meticulously, strategically choosing methods like imputation to fill in the gaps in my data.**
-- **Drop irrelevant columns such as "PassengerId," "Cabin," "Name," and "Ticket," which don't significantly contribute to my analysis.**
-- **Engage in feature engineering, crafting new features or transforming existing ones to enrich my dataset. This can lead to improved predictive performance.**
 
 ## Test Data
 - **Source of Test Data**: The Titanic dataset from Kaggle.
@@ -69,8 +55,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Quantitative Analysis
 - **Metrics Used for Evaluation**:
-  - AUC (Area Under the Curve)
-  - AIR (Accuracy Improvement Rate)
+
  
   - Below is a summary table showing the metrics for Train, Validation, and Test datasets:
 
@@ -81,10 +66,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 | AIR         | N/A     | N/A        | 0.768657   |
 
 The chart below shows the model's heatmap 
+
 ![Correlation Heatmap of Titanic](Heatmap.png)
  
-  - # Model Card: Decision Tree Classifier
-
 ## Model Overview
 This model is a Decision Tree Classifier trained to predict *Survival Status*:
 - *Survival = 0*: No (Did not survive)
@@ -157,5 +141,4 @@ The chart below illustrates the model's performance based on tree depth, showcas
 
 ### Unexpected Results
 - The model's performance may vary significantly between different demographic groups (e.g., gender, age).
-### Conclusion 
--At a predictive accuracy of 76.6%, my model demonstrates its potential to forecast Titanic passenger survival effectively. This project not only illustrates the practical application of machine learning techniques on historical data but also provides insights into the influential factors behind survival rates during the Titanic disaster.
+
