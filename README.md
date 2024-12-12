@@ -72,6 +72,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   - AUC (Area Under the Curve)
   - AIR (Accuracy Improvement Rate)
  
+  - Below is a summary table showing the metrics for Train, Validation, and Test datasets:
+
+| Metric      | Train   | Validation | Test   |
+|-------------|---------|------------|--------|
+| AUC         | 0.895773  | 0.82433     | 0.819393 |
+| Accuracy    | N/A     | N/A        | 0.768657   |
+| AIR         | N/A     | N/A        | 0.768657   |
+
+The chart below shows the model's heatmap 
+![Correlation Heatmap of Titanic](Heatmap.png)
+ 
   - # Model Card: Decision Tree Classifier
 
 ## Model Overview
